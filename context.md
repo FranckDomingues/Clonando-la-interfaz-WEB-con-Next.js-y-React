@@ -93,3 +93,15 @@ The implementation must follow these constraints:
 - Approximately 80 lines maximum per component before considering splitting it.
 
 Visual specifications must not be invented before the screenshot analysis phase. Visual details will be added later after the screenshots have been analyzed.
+
+## Home Visual Specification — 375px
+
+The mobile Home page at a 375px viewport contains a top search control with a search icon and the text **“Comienza a explorar”**, followed by horizontally overflowing category items. Each category item includes an icon and label; visible examples are **Todo**, **Alojamientos**, and **Experiencias**. **Todo** appears visually selected in the screenshot, but its exact selected-state styling is not determined.
+
+The page contains two vertically stacked listing sections. The first is titled **“Alojamientos populares en Orlando”** and the second **“Hoteles excelentes para tu próximo viaje”**. Both sections show a circular right-arrow navigation control. The second section also includes supporting descriptive text.
+
+Each section contains a horizontal listing carousel. Cards may be partially visible at the viewport edge and visibly include an image, an optional **“Favorito entre huéspedes”** badge, a favorite heart control, listing title or location text, price, a stay or pricing qualifier such as **“por 2 noches”**, and a rating.
+
+A floating pricing notice contains a tag or label-style icon and the text **“Los precios incluyen todas las tarifas”**. Bottom mobile navigation is visible at the bottom of the viewport and includes an icon and label for **Explorar**, **Favoritos**, and **Iniciar sesión**. **Explorar** appears visually active in the screenshot.
+
+The specification is limited to the observed 375px mobile structure. Desktop behavior, exact visual tokens, icon assets, interaction details, loading-state appearance, data interfaces, and implementation choices remain undetermined.
