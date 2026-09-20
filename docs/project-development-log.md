@@ -314,6 +314,60 @@ Stage 04A intentionally did NOT implement:
 - result count and price sorting recognized as requirement-driven features
 - no implementation was performed
 
+## Stage 05B — Catalog Implementation
+
+### Functionality completed
+
+- `/catalog` route implemented
+- six representative static listings added
+- result count derived from listing data
+- price sorting implemented with `useState`
+- sorting options:
+  - Recommended
+  - Price: Low to High
+  - Price: High to Low
+- sorting does not mutate the original listing array
+- existing shared `ListingCard` reused
+- Catalog cards navigate to `/rooms/[id]`
+- Catalog header includes back navigation, search summary, and filter control
+- "Prices include all fees" notice included
+- static MapPlaceholder implemented without external map dependencies
+
+### Responsive behavior
+
+- mobile uses a single-column results layout
+- mobile map placeholder appears below results
+- desktop >=768px places results on the left and map on the right
+- no unsupported desktop Navbar was introduced
+
+### Validation
+
+- 375px visual checkpoint passed
+- desktop visual checkpoint passed
+- `npm run lint` passed
+- `npm run build` passed
+- no packages added
+- Room Detail was intentionally not implemented during this stage
+
+### Commit
+
+`98d8956 feat: implement Catalog results and price sorting`
+
+### Current Status
+
+Completed:
+
+- Home
+- Catalog visual specification
+- Catalog implementation
+
+Still pending:
+
+- Room Detail visual specification
+- Room Detail implementation
+- final navigation/integration review
+- final README/documentation
+
 ## Current Project Status
 
 ### Completed
@@ -326,14 +380,14 @@ Stage 04A intentionally did NOT implement:
 - Home functionality and responsive completion (Stage 04B)
 - Home
 - Catalog 375px visual specification
+- Catalog implementation
 
 ### Still pending
 
-- Catalog implementation
 - Room Detail visual specification
 - Room Detail implementation
 - final navigation/integration review
-- final documentation / README
+- final README/documentation
 
 ---
 
