@@ -3,9 +3,12 @@ export interface Listing {
   image: string;
   title: string;
   price: string;
+  priceValue?: number;
   pricingQualifier: string;
   rating: string;
   categoryId: string;
+  reviewCount?: number;
+  metadata?: string;
   guestFavorite?: boolean;
 }
 
