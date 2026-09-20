@@ -5,6 +5,7 @@ export interface Listing {
   price: string;
   pricingQualifier: string;
   rating: string;
+  categoryId: string;
   guestFavorite?: boolean;
 }
 

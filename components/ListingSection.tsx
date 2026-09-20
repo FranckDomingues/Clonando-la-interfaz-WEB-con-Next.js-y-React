@@ -10,7 +10,7 @@ interface ListingSectionProps {
 
 const ListingSection = ({ title, description, listings }: ListingSectionProps) => {
   return (
-    <section className="pt-8">
+    <section className="min-w-0 pt-8">
       <SectionHeader title={title} description={description} />
       <ListingCarousel listings={listings} />
     </section>
