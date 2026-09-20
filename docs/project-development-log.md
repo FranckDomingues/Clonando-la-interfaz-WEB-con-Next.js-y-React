@@ -353,6 +353,18 @@ Stage 04A intentionally did NOT implement:
 
 `98d8956 feat: implement Catalog results and price sorting`
 
+## Stage 06A — Room Detail Vision-to-Specification
+
+- four 375px Room Detail screenshots reviewed
+- property summary documented
+- reviews / Guest Favorite section documented
+- amenities documented
+- detailed host section documented
+- persistent mobile booking bar supported by repeated screenshot evidence
+- gallery identified as project-required rather than screenshot-derived
+- `useEffect` loading and guest/gallery `useState` requirements recorded
+- no implementation performed
+
 ### Current Status
 
 Completed:
@@ -360,10 +372,10 @@ Completed:
 - Home
 - Catalog visual specification
 - Catalog implementation
+- Room Detail 375px visual specification
 
 Still pending:
 
-- Room Detail visual specification
 - Room Detail implementation
 - final navigation/integration review
 - final README/documentation
@@ -381,10 +393,10 @@ Still pending:
 - Home
 - Catalog 375px visual specification
 - Catalog implementation
+- Room Detail 375px visual specification
 
 ### Still pending
 
-- Room Detail visual specification
 - Room Detail implementation
 - final navigation/integration review
 - final README/documentation
