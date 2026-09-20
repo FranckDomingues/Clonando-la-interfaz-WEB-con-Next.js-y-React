@@ -201,6 +201,71 @@ The concise Home visual summary was added to:
 
 ---
 
+## Stage 04A — Static Mobile Home Implementation
+
+### Objective
+
+The approved 375px Home visual specification was converted into a static React
+component structure before adding state or effects.
+
+### Components Implemented
+
+- MobileSearch
+- CategoryNavigation
+- CategoryItem
+- ListingSection
+- SectionHeader
+- ListingCarousel
+- ListingCard
+- PriceNotice
+- MobileBottomNav
+- MobileBottomNavItem
+
+### Types
+
+`types/listing.ts` was created with minimal types for:
+
+- Listing
+- Category
+- NavigationItem
+
+### Implementation Scope
+
+- `app/page.tsx` now composes the static Home page
+- static representative listing data is used
+- mobile-first layout was implemented
+- horizontal category/listing overflow is present
+- two listing sections are rendered
+- PriceNotice and MobileBottomNav remain in normal document flow
+- no desktop-specific >=768px layout was implemented yet
+
+### Deferred Functionality
+
+Stage 04A intentionally did NOT implement:
+
+- useState
+- useEffect
+- search filtering
+- category state
+- favorite behavior
+- loading behavior
+- real carousel logic
+- API calls
+- dynamic fetching
+- Catalog
+- Room Detail
+
+### Verification
+
+- 375px visual checkpoint passed
+- `npm run lint` passed
+- `npm run build` passed
+- components remained focused and under approximately 80 lines
+
+### Commit
+
+`747a6e1 feat: build static mobile Home structure`
+
 ## Current Project Status
 
 ### Completed
@@ -209,16 +274,20 @@ The concise Home visual summary was added to:
 - initial project context
 - Home 375px visual analysis
 - Home visual specification documentation
+- Home static implementation (Stage 04A)
 
-### Not yet started
+### Still pending
 
-- Home implementation
+- Home functional state/interactions
+- Home loading behavior
+- Home internal navigation
+- Home desktop responsive adaptation
 - Catalog visual specification
 - Catalog implementation
 - Room Detail visual specification
 - Room Detail implementation
 - final integration
-- final project documentation
+- final documentation
 
 ---
 
