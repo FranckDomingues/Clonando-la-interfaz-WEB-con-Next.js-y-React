@@ -266,6 +266,42 @@ Stage 04A intentionally did NOT implement:
 
 `747a6e1 feat: build static mobile Home structure`
 
+---
+
+## Stage 04B — Home Functionality and Responsive Completion
+
+### Functionality completed
+
+- Home search implemented with useState
+- real-time case-insensitive listing filtering
+- selected category implemented with useState
+- Todo is the initial selected category
+- Experiencias supports an empty state when no mock data exists
+- simulated initial loading implemented with useEffect
+- timeout cleanup implemented
+- ListingCard uses Next.js Link to `/rooms/[id]`
+- LoadingIndicator component added
+
+### Responsive completion
+
+- 375px mobile structure preserved
+- section headings/descriptions wrap correctly
+- horizontal carousel overflow remains scoped to the carousel
+- desktop adaptation begins at >=768px
+- desktop layout remains restrained and centered
+- no unsupported desktop Navbar was introduced
+
+### Validation
+
+- `npm run lint` passed
+- `npm run build` passed
+- no packages added
+- Catalog and Room Detail were intentionally not implemented during this stage
+
+### Commit
+
+`9f487a0 feat: complete Home interactions and responsive behavior`
+
 ## Current Project Status
 
 ### Completed
@@ -275,19 +311,16 @@ Stage 04A intentionally did NOT implement:
 - Home 375px visual analysis
 - Home visual specification documentation
 - Home static implementation (Stage 04A)
+- Home functionality and responsive completion (Stage 04B)
 
 ### Still pending
 
-- Home functional state/interactions
-- Home loading behavior
-- Home internal navigation
-- Home desktop responsive adaptation
 - Catalog visual specification
-- Catalog implementation
 - Room Detail visual specification
-- Room Detail implementation
-- final integration
-- final documentation
+- Catalog visual specification and implementation
+- Room Detail visual specification and implementation
+- final navigation/integration review
+- final documentation / README
 
 ---
 
