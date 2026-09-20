@@ -302,6 +302,18 @@ Stage 04A intentionally did NOT implement:
 
 `9f487a0 feat: complete Home interactions and responsive behavior`
 
+---
+
+## Stage 05A — Catalog Vision-to-Specification
+
+- Catalog Results 375px screenshot reviewed
+- Search Overlay screenshot reviewed as secondary evidence
+- primary results-page component hierarchy identified
+- shared ListingCard reuse planned
+- screenshot-vs-project map-placement conflict explicitly documented
+- result count and price sorting recognized as requirement-driven features
+- no implementation was performed
+
 ## Current Project Status
 
 ### Completed
@@ -312,13 +324,14 @@ Stage 04A intentionally did NOT implement:
 - Home visual specification documentation
 - Home static implementation (Stage 04A)
 - Home functionality and responsive completion (Stage 04B)
+- Home
+- Catalog 375px visual specification
 
 ### Still pending
 
-- Catalog visual specification
+- Catalog implementation
 - Room Detail visual specification
-- Catalog visual specification and implementation
-- Room Detail visual specification and implementation
+- Room Detail implementation
 - final navigation/integration review
 - final documentation / README
 
