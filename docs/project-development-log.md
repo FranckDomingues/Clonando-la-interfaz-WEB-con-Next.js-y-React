@@ -382,6 +382,43 @@ Still pending:
 
 ## Current Project Status
 
+## Stage 06B — Room Detail Implementation
+
+### Functionality completed
+
+- dynamic `/rooms/[id]` route implemented for existing Home and Catalog listing ids
+- static Room Detail data added with representative property variations
+- simulated route-based loading implemented with `useEffect` and cleanup
+- accessible room-not-found state added
+- requirement-driven gallery implemented with `useState`, counter, and Previous / Next controls
+- property overview, host summary, location highlight, amenities, reviews, and detailed host sections implemented
+- guest count implemented with `useState`, accessible decrement/increment controls, and a minimum of one guest
+- booking pricing, cancellation benefit, and Reserve CTA implemented without payment behavior
+- Home and Catalog links resolve to Room Detail
+- back navigation to `/catalog` uses Next.js `Link`
+
+### Responsive completion
+
+- light Room Detail surface with readable dark text
+- mobile single-column layout with compact persistent booking bar
+- full guest controls remain in normal mobile content flow
+- desktop layout keeps the main content and booking panel in separate usable columns
+- no unsupported desktop Navbar or external map/gallery dependency added
+
+### Validation
+
+- Room Detail visual checkpoint completed at mobile and desktop target sizes
+- representative Home and Catalog listing ids returned HTTP 200
+- `/`, `/catalog`, and `/rooms/orlando-1` returned HTTP 200
+- `npm run lint` passed
+- `npm run build` passed
+- no packages added
+- no real booking, payment, date picker, or map behavior implemented
+
+### Commit
+
+Pending final delivery commit.
+
 ### Completed
 
 - project initialization
@@ -394,10 +431,10 @@ Still pending:
 - Catalog 375px visual specification
 - Catalog implementation
 - Room Detail 375px visual specification
+- Room Detail implementation
 
 ### Still pending
 
-- Room Detail implementation
 - final navigation/integration review
 - final README/documentation
 
