@@ -11,6 +11,7 @@ export interface RoomData {
   gallery: string[];
   originalPrice: string;
   currentPrice: string;
+  nightlyPrice: string;
   stayText: string;
   categoryLabel: string;
 }
@@ -28,6 +29,7 @@ const primaryRoom: RoomData = {
   gallery: ["🏡", "🌴", "🛋️"],
   originalPrice: "$3,347 USD",
   currentPrice: "$3,096 USD",
+  nightlyPrice: "$1,548 USD",
   stayText: "Por 2 noches · 2–4 de oct",
   categoryLabel: "Alojamiento entero",
 };

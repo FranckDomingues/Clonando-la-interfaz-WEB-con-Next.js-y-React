@@ -105,3 +105,30 @@ Each section contains a horizontal listing carousel. Cards may be partially visi
 A floating pricing notice contains a tag or label-style icon and the text **“Los precios incluyen todas las tarifas”**. Bottom mobile navigation is visible at the bottom of the viewport and includes an icon and label for **Explorar**, **Favoritos**, and **Iniciar sesión**. **Explorar** appears visually active in the screenshot.
 
 The specification is limited to the observed 375px mobile structure. Desktop behavior, exact visual tokens, icon assets, interaction details, loading-state appearance, data interfaces, and implementation choices remain undetermined.
+
+## Vision-to-Specification Record
+
+Visual analysis was completed before implementation for each principal view. Detailed records remain in `docs/`, with the following consolidated evidence of the component, data, and layout decisions.
+
+### Home — 375px
+
+- Detailed specification: `docs/home-visual-spec-375.md`
+- Specification commit: `d1c0aa5 docs: add Home 375px visual specification`
+- Components/data: search control, category filters, reusable `ListingCard`, listing sections, price notice, and mobile navigation using listing, category, and navigation data.
+- Layout relationship: vertically stacked mobile sections with category navigation and listings adapted from the mobile baseline at desktop breakpoints.
+
+### Catalog — 375px
+
+- Detailed specification: `docs/catalog-visual-spec-375.md`
+- Specification commit: `369cf20 docs: add Catalog visual specification`
+- This specification existed before Catalog implementation commit `98d8956 feat: implement Catalog results and price sorting`.
+- Components/data: catalog header and controls, shared `ListingCard`, static listing results, sorting state, fee notice, and map placeholder.
+- Layout relationship: one-column mobile results with the map below; desktop results and map are placed in adjacent columns.
+
+### Room Detail — 375px
+
+- Detailed specification: `docs/room-detail-visual-spec-375.md`
+- Specification commit: `8333fee docs: add Room Detail visual specification`
+- This specification existed before Room implementation commit `a2ca1f0 feat: implement Room Detail experience`.
+- Components/data: `RoomGallery`, `RoomOverview`, host summary/profile, location, amenities, reviews, `BookingPanel`, and typed `RoomData`.
+- Layout relationship: mobile single-column detail content with persistent booking access; desktop separates detail content from the booking panel.

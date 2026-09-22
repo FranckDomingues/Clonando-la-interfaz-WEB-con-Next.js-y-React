@@ -10,7 +10,7 @@ interface ListingCardProps {
 
 const ListingCard = ({ listing, variant = "home" }: ListingCardProps) => {
   return (
-    <article className={`relative ${variant === "catalog" ? "w-full" : "w-[72vw] max-w-[280px] shrink-0"}`}>
+    <article className="relative w-full">
       <Link href={`/rooms/${listing.id}`} className="block">
         <div className={`relative flex items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-rose-100 via-orange-100 to-sky-100 text-5xl ${variant === "catalog" ? "aspect-[4/3]" : "aspect-[4/3]"}`}>
           <span aria-hidden="true">{listing.image}</span>
