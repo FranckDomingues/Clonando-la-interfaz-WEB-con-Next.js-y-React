@@ -365,23 +365,6 @@ Stage 04A intentionally did NOT implement:
 - `useEffect` loading and guest/gallery `useState` requirements recorded
 - no implementation performed
 
-### Current Status
-
-Completed:
-
-- Home
-- Catalog visual specification
-- Catalog implementation
-- Room Detail 375px visual specification
-
-Still pending:
-
-- Room Detail implementation
-- final navigation/integration review
-- final README/documentation
-
-## Current Project Status
-
 ## Stage 06B — Room Detail Implementation
 
 ### Functionality completed
@@ -417,26 +400,23 @@ Still pending:
 
 ### Commit
 
-Pending final delivery commit.
+`a2ca1f0 feat: implement Room Detail experience`
 
-### Completed
+## Final Integration Status
 
-- project initialization
-- initial project context
-- Home 375px visual analysis
-- Home visual specification documentation
-- Home static implementation (Stage 04A)
-- Home functionality and responsive completion (Stage 04B)
-- Home
-- Catalog 375px visual specification
-- Catalog implementation
-- Room Detail 375px visual specification
-- Room Detail implementation
+Completed:
 
-### Still pending
+- Home, Catalog, and Room Detail views
+- Dynamic Room Detail route integration from existing listing ids
+- Responsive mobile-first and desktop adaptations
+- Visual specification documentation for all three views
+- Source, lint, production build, and representative HTTP route validation
 
-- final navigation/integration review
-- final README/documentation
+Pending only:
+
+- Final README and delivery validation
+
+The implementation baseline is complete. The remaining work in this final stage is documentation consolidation and delivery verification; no additional product behavior is planned.
 
 ---
 
@@ -447,6 +427,6 @@ Documentation is being produced progressively.
 - `context.md` contains product and architecture context.
 - Files under `docs/` preserve detailed development and specification evidence.
 - This development log tracks chronological progress.
-- `README.md` will be consolidated and finalized after the implementation is complete.
+- `README.md` is consolidated as the final project entry point after implementation completion.
 
 Unfinished functionality is not claimed as implemented.
